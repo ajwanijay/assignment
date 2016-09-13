@@ -1,0 +1,46 @@
+example : pay tuition 
+
+object : student 
+  state : username , password 
+  behaviour : logintoNeuAccount(), clickMakeapaymenttab(), clickTuituon(), gotoNubasket(), Checkout(), makeaPayment(),
+  
+object : neu account 
+  state : Display student details 
+  behaviour : DisplayDetails(), DisplayDuePayment(), acceptPyameny(),
+  
+  class student{
+      string username;
+      string password;
+      void NUpay(nupay)
+      payment makeaPayment(payment)
+      nubasket clickoncheckout(paymentOption)
+      Money paytheMoneytoWebsite(NUpay)
+      }
+      
+class nupay{
+      nupay displaypaymentoption;
+      tuition showtuitionfees(student s)
+      nubasket checkoutfromnubasket (student s)
+      money acceptthePayment(student s, money)
+      }
+      
+  class money{
+      float amount;
+      }
+      
+class makeaPaymentbyNUpay{
+      public static void main(string[] args){
+      payment nupay = new paymentoption; 
+      
+      student jay = new student;
+      jay.name = "jay";
+      
+      jay.visitthewebsite(nupay)
+      payment = NUpay.displaypaymentoption();
+      Student student = nubasket.checkoutforfinalpayment();
+      Money money = jay.makeaPaymenttoNUoay();
+      nupay.acceptTheMoney(jay,money);
+      }
+      }
+      
+      
