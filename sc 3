@@ -1,0 +1,47 @@
+example : order for delivery 
+
+object : consumer 
+  state : name , address
+  behaviour : makeCall(), decideorder()
+  
+object : operator 
+  state :name, options for food 
+  behaviour : giveoptions(), askforAddress(), informthecost(),
+  
+object : phone
+  state: makes phone class 
+  
+class consumer{
+string name;
+string address;
+void makesacall(food delievery)
+food selectsfood(Food food[])
+void placestheorder(Food food)
+}
+
+class operator{
+  string name;
+  food[] Food;
+  food[] giveOptionsForFood;
+  address takesAdress(consumer c)
+  void placetheorderforfood(food[] Food)
+  void informsthecost(food[], Food)
+}  
+  
+  class order on phone{
+  public static void main(string[] args);
+  food pizza = new food;
+  pizza.name = "pizza";
+  food burger = new food;
+  burger.name = "burger";
+  
+  consumer jay = new consumer;
+  jay.name = "jay";
+  
+  jay.makesacall(operator)
+  Food[] food = operator.givefoodoptions;
+  jay.placesorder(food);
+  jay.givestheaddress;
+  operator.informsthecosttoconsumer(consumer);
+  }
+  }
