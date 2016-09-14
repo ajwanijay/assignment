@@ -1,0 +1,65 @@
+example : book an airbnb
+
+object : tourist 
+  state: name 
+  behaviour : openapp(), insertlocation(), findhouse(), bookthehouse(), paythemoney()
+  
+object : app
+  state : list of all the available houses
+  behaviour : displayavailabehouse(), showtheprice(), acceptthepayment()
+  
+object : house
+  state: price, location 
+  behaviour : getprice(), getlocation()
+  
+object : money
+  state : amount 
+  
+class tourist{
+  string location;
+  void opentheapp(airbnb)
+  void enterthelocation(airbnb)
+  House findthehouseinterestedin(house[])
+  House bookthehouse(house)
+  Money makeapayment(airbnb)
+  }
+  
+class app{
+  Location[] location;
+  House[] house;
+  House[] displayAvailabeHouses();
+  void acceptthemoneyfromTourist (tourist t , Money money)
+  }
+
+class location{
+string name;
+string getlocation()
+}
+
+class house{
+  string jpuse;
+  Float price;
+  Float getprice()
+  string gethouse();
+  }
+  
+class money{
+Float amount;
+}
+
+class bookanairbnb{
+  public static void main(strings[] args){
+    app airbnb = new app;
+    airbnb.name = "airbnb"
+    tourist john = new tourtist;
+    john.name = "john"
+    
+    john.opentheapp(airbnb);
+    Location[] locations=airbnb.displayslocations
+    john.selectslocation(location);
+    House[] house =airbnb.displayavailabehouse(house[])
+    House house =john.selecthouseinterestin(tourist t, house[])
+    Money. makesapayment(Money);
+    app. accepetsthepayment(Money);
+    }
+    }
