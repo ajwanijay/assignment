@@ -1,0 +1,12 @@
+example : student driving home
+
+object : student 
+  state : drive , 
+  behaviour: getsinthecar(), drivesthecar()
+  
+object : car
+  state: helps to transport
+  behaviour : getoperatedbystudent(), 
+  
+class student{
+ string
