@@ -40,7 +40,7 @@ class operator{
   
   jay.makesacall(operator)
   Food[] food = operator.givefoodoptions;
-  jay.placesorder(food);
+  Food food = jay.placesorder(food);
   jay.givestheaddress;
   operator.informsthecosttoconsumer(consumer);
   }
