@@ -1,0 +1,71 @@
+example : travelling to la 
+
+objects : 
+  object : tourist 
+    state : name, city
+    behaviour: visitthewebsite(), findthecheapestflight(), bookaflight(), makeapayment(),
+    
+  object : flightbookingwebsite
+    state : collection of all available flight details
+    behaviour : displayallavailabeflights(), emailsconfirmation(), acceptspayment(),
+    
+  object : flight
+    state: name , price
+    behaviour : getname(), getprice().
+    
+  object : money
+    state: amount
+    
+class tourist {
+  string name;
+  string city;
+  void visitthewebsite(flightbookingwebsite);
+  Flight findthecheapestflighttoLA(Flight[] flight);
+  void bookstheflight(flightbookingwebsite);
+  Money makesapayment(Money m);
+}
+
+class flightbookingwebsite{
+  Flight[] flights;
+  Flight[] displaysavailabeflights;
+  void emailtheconfirmationt(tourist t,Flight b);
+  void accepthepayment(tourist t, money m);
+  }
+  
+class flight{
+string name'
+float price;
+float getprice;
+string getname;
+}
+
+class money{
+float moeney;
+}
+
+class bookflightonline{
+  public static void main(strings[] args){
+  
+  flightbookingwebsite xpedia = new flightbookingwebsite;
+  
+  flight delta = new flight;
+  delta.name = "delta";
+  flight united = new flight;
+  united.name = "united";
+  
+  Flight[] flights = {"delta", "united"};
+  
+  tourtist john = new tourist;
+  john name = "john";
+  
+  john.visitthewebsite(xpedia);
+  Flight[] flight =xpedia.displaysAvailabeFlights;
+  Flight flight = john.findthecheapestflighttoLA;
+  john.bookstheflight(flight)
+  Money money = john.makesaPayment(xpedia);
+  xpedia.acceptsthepayment(john ,money);
+  xpedia.emailstheconfirmation(flight);
+  }
+}
+ 
+  
