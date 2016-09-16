@@ -2,7 +2,7 @@ example : order for delivery
 
 object : consumer 
   state : name , address
-  behaviour : makeCall(), decideorder()
+  behaviour : makeCall(), decideorder(), givesaddress()
   
 object : operator 
   state :name, options for food 
@@ -17,14 +17,15 @@ string address;
 void makesacall(food delievery)
 food selectsfood(Food food[])
 void placestheorder(Food food)
+void givestheaddress()
 }
 
 class operator{
   string name;
   food[] Food;
   food[] giveOptionsForFood;
-  address takesAdress(consumer c)
-  void placetheorderforfood(food[] Food)
+  void takesAddress(consumer c)
+  void takestheorderforfood(food[] Food)
   void informsthecost(food[], Food)
 }  
   
