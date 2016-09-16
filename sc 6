@@ -2,11 +2,39 @@ example : student driving home
 
 object : student 
   state : drive , 
-  behaviour: getsinthecar(), drivesthecar()
+  behaviour: getsinthecar(), drivesthecar() ,addloctioningps()
   
 object : car
   state: helps to transport
-  behaviour : getoperatedbystudent(), 
+  behaviour : getoperatedbystudent(),
+  
+object :gps 
+  state : show directions
+  behaviour : getlocation(), showdirections(),
+  
   
 class student{
- string
+ void getinthecar(car);
+ void enterlocationingps(gps);
+ gps. recievedirections();
+ void drivethecar(car);
+ }
+
+class gps{
+string location;
+Direction[] direction;
+Direction[] showshortestroute(direction d);
+}
+
+class drivehome{
+  public static void main(string args[]){
+    student.john = new student;
+    john.name = "john";
+    
+    john.getsinthecar(car);
+    Location = john.enterslocationingps;
+    Direction[] direction = displaysdifferentroutes;
+    Direction = john.selectsshortestroute;
+    john.drivestothedestination;
+    }
+  }
