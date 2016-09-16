@@ -6,7 +6,7 @@ object : tourist
   
 object : app
   state : list of all the available houses
-  behaviour : displayavailabehouse(), showtheprice(), acceptthepayment()
+  behaviour : displayavailabehouse(), showtheprice(), acceptthepayment(), emailstheconfirmation()
   
 object : house
   state: price, location 
@@ -27,8 +27,10 @@ class tourist{
 class app{
   Location[] location;
   House[] house;
-  House[] displayAvailabeHouses();
+  House[] displayAvailabeHouses()
+  void displaysthepriceofhouse()
   void acceptthemoneyfromTourist (tourist t , Money money)
+  void emailsthesconfirmation()
   }
 
 class location{
@@ -37,10 +39,10 @@ string getlocation()
 }
 
 class house{
-  string jpuse;
+  string location;
   Float price;
   Float getprice()
-  string gethouse();
+  string getlocation();
   }
   
 class money{
@@ -61,5 +63,6 @@ class bookanairbnb{
     House house =john.selecthouseinterestin(tourist t, house[])
     Money. makesapayment(Money);
     app. accepetsthepayment(Money);
+    app.emailstheconfirmation;
     }
     }
