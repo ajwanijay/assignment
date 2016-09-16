@@ -9,7 +9,7 @@ object : operator
   behaviour : giveoptions(), askforAddress(), informthecost(),
   
 object : phone
-  state: makes phone class 
+  state: makes calls 
   
 class consumer{
 string name;
