@@ -30,7 +30,7 @@ class operator{
 }  
   
   class order on phone{
-  public static void main(string[] args);
+  public static void main(string[] args){
   food pizza = new food;
   pizza.name = "pizza";
   food burger = new food;
